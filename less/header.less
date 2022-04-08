@@ -1,35 +1,42 @@
 .nav {
-   margin-top: 20px;
-   margin-left: 0;
-   width: 1682px;
-
-   height: 0px;
+   max-width: 1686px;
+   margin: auto;
+   height: 120px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-top: 35px;
-   
+   text-align: center;
 
    .logo {
-      width: 136px;
-      height: 91px;
+      flex: 0 0 136px;
+
+      .logo img{
+         max-width: 100%;
+      }
+
+      @media(max-width:999px){
+         width: 100px;
+      }
 
    }
-   
+
    .search {
-         padding-right: 11px;
-      }
+      padding-right: 11px;
+   }
+
+   
 
    ul {
       display: flex;
-      width: 660px;
+      max-width: 860px;
       justify-content: space-between;
       align-items: center;
-      
+
       li {
          list-style: none;
          color: white;
          cursor: pointer;
+         padding-right: 20px;
 
          a {
             color: white;
@@ -37,17 +44,20 @@
             text-decoration: none;
          }
 
-         li,a:hover {
+         li,
+         a:hover {
             border-bottom: 1px solid #B00F0A;
          }
-   
+
       }
    }
+   
 
    .menu-info {
       display: flex;
-      width: 323px !important;
+      max-width: 323px;
       justify-content: space-between;
+
 
       .language {
          display: flex;
@@ -56,9 +66,8 @@
          height: 36px;
          justify-content: space-between;
 
-         .ro, .ru {
-
-            
+         .ro,
+         .ru {
             line-height: 15px;
 
             p {
@@ -67,24 +76,24 @@
 
             }
 
-            img{
+            img {
                width: 5px;
                margin: 0 15px;
             }
-            
+
 
          }
       }
 
       .call {
          height: 36px;
-         width: 183px;
+         max-width: 183px;
          margin: 0 auto;
-         font-family: Montserrat Alternates;
+         font-family: "Montserrat";
          text-align: center;
+         padding: 0;
 
          a {
-            border: 1px solid;
             margin: 0 auto;
             text-decoration: none;
             border: none;
@@ -94,9 +103,69 @@
             font-size: 19px;
             font-weight: 700;
 
+            @media (max-width: 999px) {
+               display: none;
+               
+
+            }
+
          }
-         
+
+         hr {
+            @media (max-width:999px) {
+               display: none;
+            }
+         }
+
+         .call-mob {
+            display: none;
+
+            img {
+               width: 30px;
+               height: 30px;
+            }
+
+            @media (max-width: 999px) {
+               display: block;
+               margin: 0 auto;
+               width: 70px;
+            }
+         }
+
       }
+   }
+
+   @media (max-width: 810px){
+      display: none !important; 
+   }
+     
+}
+
+.navbar {
+   display: none !important;
+   
+   
+   .navbar-brand {
+      margin: 0 !important;
+      padding: o !important;
+   }
+      .container-nav {
+         display: flex !important;
+         justify-content: space-between !important;
+         width: 100% !important;
+
+      img {
+         width: 50px !important;
+         text-align: left !important;
+         margin: auto !important;
+      }
+   
+         }
+
+   
+
+   @media (max-width:810px) {
+      display: block !important;
    }
 }
 

@@ -1,123 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet/less" href="less/index.less">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-   </head>
-   
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GorGadze</title>
+   <link rel="stylesheet/less" href="less/index.less">
+   <link rel="stylesheet/less" href="less/reset.less">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
 <body>
    <header>
-      <div class="container">
-         <div class="nav">
-            <div class="logo"> 
-            <img src="image/logo.svg" alt="#"></div>
-            <div class="menu">
-               <ul>
-                  <li><a href="#" class="search"><img src="image/search.svg" alt=""></a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Товары и услуги</a></li>
-                  <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Новости</a></li>
-               </ul>
+      <nav class="nav">
+         <div class="logo">
+            <img src="image/logo.svg" alt="#">
+         </div>
+         <div class="header-burger">
+            <span></span>
+         </div>
+         <div class="menu">
+            <ul>
+               <li><a href="#" class="search"><img src="image/search.svg" alt=""></a></li>
+               <li><a href="#">О нас</a></li>
+               <li><a href="#">Товары и услуги</a></li>
+               <li><a href="#">Контакты</a></li>
+               <li><a href="#">Новости</a></li>
+            </ul>
+         </div>
+         <div class="menu-info">
+            <div class="language">
+               <div class="ro">
+                  <p>Ro</p>
+                  <img src="image/dot-white.svg" alt="">
+               </div>
+               <div class="ru">
+                  <p>Рус</p>
+                  <img src="image/dot-white.svg" alt="">
+               </div>
             </div>
-            <div class="menu-info">
-               <div class="language">
-                  <div class="ro">
-                     <p>Ro</p>
-                     <img src="image/dot-white.svg" alt="">   
-                  </div>
-                  <div class="ru">
-                     <p>Рус</p>
-                     <img src="image/dot-white.svg" alt="">   
-                  </div>
-               </div>
-               <div class="call">
-                  <a href="tel:+37367050768">+(373)67050768</a>
-                  <hr width="150px" color="#B00F0A">
-               </div>
+            <div class="call">
+               <a href="tel:+37367050768">+(373)67050768</a>
+               <a class="call-mob" href="tel:+37367050768"><img
+                     src="https://cdn2.iconfinder.com/data/icons/email-58/65/57-512.png" alt=""></a>
+               <hr width="150px" color="#B00F0A">
+            </div>
+         </div>
+      </nav>
+
+      <div class="navbar navbar-expand-sm navbar-light bg-dark">
+         <div class="container">
+            <div class="container-nav">
+               <a href="#" class="navbar-brand"><img src="image/logo.svg" alt=""></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                  aria-controls="navbarContent" aria-expanded="false"> <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+               <ul class="navbar-nav me-auto mb-2">
+                  <li class="nav-item"><a href="#" class="nav-link"><img src="image/search.svg" alt=""></a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Товары и услуги</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Ro</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Рус</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">+(373)67050768</a></li>
+               </ul>
             </div>
          </div>
       </div>
+
    </header>
 
    <main>
-         <div class="home-banner">
-            <div class="first-infoPage">
-               <h1>Перепелинная продукция премиум класса</h1>
-               <p>Это продукция, в первую очередь, не содержащая консервантов,
-                  искусственных добавок и генетически модифицированных организмов.
-                  Соблюдение технических и экологических норм в процессе
-                  ее производства тщательно контролируется.</p>
-               <ul>
-                  <li> Доставляется
-                     свежей
-                     </li>
-                  <li>Двойная
-                     сертификация
-                     </li>
-                  <li>Без заморозки, ГМО
-                     и консервантов</li>
-               </ul>
-               <button> Заказать перепелов </button>
+      <div class="home-banner">
+         <div class="first-infoPage">
+            <h1>Перепелинная продукция премиум класса</h1>
+            <p>Это продукция, в первую очередь, не содержащая консервантов,
+               искусственных добавок и генетически модифицированных организмов.
+               Соблюдение технических и экологических норм в процессе
+               ее производства тщательно контролируется.</p>
+            <ul>
+               <li> Доставляется
+                  свежей
+               </li>
+               <li>Двойная
+                  сертификация
+               </li>
+               <li>Без заморозки, ГМО
+                  и консервантов</li>
+            </ul>
+            <button> Заказать перепелов </button>
+         </div>
+      </div>
+
+      <div class="services">
+         <div class="services-item">
+            <img src="image/services.svg" alt="">
+            <div class="services-left_info">
+               <h3>
+                  Доставка товара
+               </h3>
+               <p>Cras ante et tristique bibendum. Turpis ullamcorper aliquam volutpat,
+                  quam. Vitae nisi arcu nam at pellentesque pellentesque. Neque, ullamcorper 2</p>
             </div>
          </div>
-      
-         <div class="services">
-            <div class="services-item">
-               <img src="image/services.svg" alt="">
-               <div class="services-left_info">
-                  <h3>
-                     Доставка товара
-                  </h3>
-                  <p>Cras ante et tristique bibendum. Turpis ullamcorper aliquam volutpat,
-                      quam. Vitae nisi arcu nam at pellentesque pellentesque. Neque, ullamcorper 2</p>
-               </div>
-            </div>
-            <div class="services-item">
-               <img src="image/services.svg" alt="">
-               <div class="services-right _info">
-                  <h3>
-                     Услуга номер два
-                  </h3>
-                  <p>Cras ante et tristique bibendum. Turpis ullamcorper aliquam volutpat,
-                      quam. Vitae nisi arcu nam at pellentesque pellentesque. Neque, ullamcorper 2</p>
-               </div>
+         <div class="services-item">
+            <img src="image/services.svg" alt="">
+            <div class="services-right _info">
+               <h3>
+                  Услуга номер два
+               </h3>
+               <p>Cras ante et tristique bibendum. Turpis ullamcorper aliquam volutpat,
+                  quam. Vitae nisi arcu nam at pellentesque pellentesque. Neque, ullamcorper 2</p>
             </div>
          </div>
-  
-         <div class="about">
-            <img src="image/about-image.png" alt="">
-            <div class="about-info">
-               <img src="image/page-marker.svg" alt="">
-               <h2>
-                  О нас 
-               </h2>
-               <p>Cras ante et tristique bibendum. Turpis ullamcorper aliquam volutpat, quam.
-                  Vitae nisi arcu nam at pellentesque pellentesque. Neque, ullamcorper volutpat
-                  eget porttitor bibendum porttitor. Auctor quam augue venenatis dolor.<br> <br>
-                  Faucibus non ipsum velit pretium in erat ipsum. Vulputate lectus sed in lobortis
-                  morbi. Consequat porttitor vitae quisque magna habitant turpis posuere.
-                  Hendrerit urna diam id lectus massa amet risus adipiscing. Ut cras nunc,
-                  pellentesque consectetur morbi pretium non ut facilisi. A et ultricies neque,
-                  vel dolor euismod phasellus pretium. Ac nibh odio pellentesque quis neque netus
-                  venenatis at. Semper consectetur aliquam amet magna maecenas. Imperdiet habitasse
-                  porta et sagittis eu justo, cras. In tincidunt est enim, tortor. Varius et
-                  cum id integer eget non urna, sem tincidunt. At ornare scelerisque massa tortor
-                  sed. Tincidunt habitasse aliquet sed sit. Maecenas faucibus nulla id a.<br> <br>
-                  Orci, sem et quis etiam amet enim. Morbi tellus tellus, neque neque nunc pharetra massa.
-                  Eget molestie nunc leo cras sit cursus. In ullamcorper odio nunc, cursus. Amet lectus 
-                  sed eu molestie pulvinar orci sit.</p>
-            </div>
+      </div>
+
+      <div class="about">
+         <img src="image/about-image.png" alt="">
+         <div class="about-info">
+            <img src="image/page-marker.svg" alt="">
+            <h2>
+               О нас
+            </h2>
+            <p>Cras ante et tristique bibendum. Turpis ullamcorper aliquam volutpat, quam.
+               Vitae nisi arcu nam at pellentesque pellentesque. Neque, ullamcorper volutpat
+               eget porttitor bibendum porttitor. Auctor quam augue venenatis dolor.<br> <br>
+               Faucibus non ipsum velit pretium in erat ipsum. Vulputate lectus sed in lobortis
+               morbi. Consequat porttitor vitae quisque magna habitant turpis posuere.
+               Hendrerit urna diam id lectus massa amet risus adipiscing. Ut cras nunc,
+               pellentesque consectetur morbi pretium non ut facilisi. A et ultricies neque,
+               vel dolor euismod phasellus pretium. Ac nibh odio pellentesque quis neque netus
+               venenatis at. Semper consectetur aliquam amet magna maecenas. Imperdiet habitasse
+               porta et sagittis eu justo, cras. In tincidunt est enim, tortor. Varius et
+               cum id integer eget non urna, sem tincidunt. At ornare scelerisque massa tortor
+               sed. Tincidunt habitasse aliquet sed sit. Maecenas faucibus nulla id a.<br> <br>
+               Orci, sem et quis etiam amet enim. Morbi tellus tellus, neque neque nunc pharetra massa.
+               Eget molestie nunc leo cras sit cursus. In ullamcorper odio nunc, cursus. Amet lectus
+               sed eu molestie pulvinar orci sit.</p>
          </div>
-      
+      </div>
+
 
       <div class="products">
          <div class="container">
@@ -129,14 +162,19 @@
                   <div class="swiper-slide">
                      <div class="products-items">
                         <div class="product-item">
-                           <img src="#" alt="">
+                           <img src="image/prod-1.png" alt="">
                            <h3>Яйца перепелов</h3>
                            <ul>
                               <li>Свежие яйца</li>
                               <li>Инкубационные яйца</li>
                               <li>Маринованные яйца</li>
                            </ul>
-                           <p>50 mdl. / шт</p> <button>детали</button> <img src="#" alt="">
+                           <div class="prod-info">
+                              <b>50 mdl. / шт</b>
+                              <button>детали</button>
+                              <img src="image/button-next.svg" alt="">
+                           </div>
+
                         </div>
                      </div>
                   </div>
@@ -144,40 +182,51 @@
                   <div class="swiper-slide">
                      <div class="products-items">
                         <div class="product-item">
-                           <img src="#" alt="">
+                           <img src="image/prod-2.png" alt="">
                            <h3>Яйца перепелов</h3>
                            <ul>
                               <li>Свежие яйца</li>
                               <li>Инкубационные яйца</li>
                               <li>Маринованные яйца</li>
                            </ul>
-                           <p>50 mdl. / шт</p> <button>детали</button> <img src="#" alt="">
+                           <div class="prod-info">
+                              <b>50 mdl. / шт</b>
+                              <button>детали</button>
+                              <img src="image/button-next.svg" alt="">
+                           </div>
+
                         </div>
                      </div>
                   </div>
-                  
+
                   <div class="swiper-slide">
                      <div class="products-items">
                         <div class="product-item">
-                           <img src="#" alt="">
+                           <img src="image/prod-3.png" alt="">
                            <h3>Яйца перепелов</h3>
                            <ul>
                               <li>Свежие яйца</li>
                               <li>Инкубационные яйца</li>
                               <li>Маринованные яйца</li>
                            </ul>
-                           <p>50 mdl. / шт</p> <button>детали</button> <img src="#" alt="">
+                           <div class="prod-info">
+                              <b>50 mdl. / шт</b>
+                              <button>детали</button>
+                              <img src="image/button-next.svg" alt="">
+                           </div>
+
                         </div>
                      </div>
                   </div>
                </div>
-               
+
                <div class="swiper-button-next"> <img src="image/button-next.svg" alt=""></div>
                <div class="swiper-button-prev"> <img src="image/button-prev.svg" alt=""></div>
-               
+               <div class="swiper-pagination"></div>
+
             </div>
 
-            <a href="#">Перейти ко всем товарам <img src="#" alt=""></a>
+            <a href="#">Перейти ко всем товарам <img src="image/arows.svg" alt=""></a>
          </div>
       </div>
 
@@ -190,8 +239,8 @@
                <h3>Risus sagittis et vitae in et nam.</h3>
                <p>Eleifend accumsan, adipiscing pulvinar turpis
                   orci. Sed leo egestas aliquam sit tortor ultrices.
-                  Convallis pulvinar lacus, pretium leo, risus. In 
-                  quis congue pellentesque diam est purus mauris. 
+                  Convallis pulvinar lacus, pretium leo, risus. In
+                  quis congue pellentesque diam est purus mauris.
                   Imperdiet donec quam ac elit.</p>
             </div>
 
@@ -200,8 +249,8 @@
                <h3>Risus sagittis et vitae in et nam.</h3>
                <p>Eleifend accumsan, adipiscing pulvinar turpis
                   orci. Sed leo egestas aliquam sit tortor ultrices.
-                  Convallis pulvinar lacus, pretium leo, risus. In 
-                  quis congue pellentesque diam est purus mauris. 
+                  Convallis pulvinar lacus, pretium leo, risus. In
+                  quis congue pellentesque diam est purus mauris.
                   Imperdiet donec quam ac elit.</p>
             </div>
 
@@ -210,11 +259,11 @@
                <h3>Risus sagittis et vitae in et nam.</h3>
                <p>Eleifend accumsan, adipiscing pulvinar turpis
                   orci. Sed leo egestas aliquam sit tortor ultrices.
-                  Convallis pulvinar lacus, pretium leo, risus. In 
-                  quis congue pellentesque diam est purus mauris. 
+                  Convallis pulvinar lacus, pretium leo, risus. In
+                  quis congue pellentesque diam est purus mauris.
                   Imperdiet donec quam ac elit.</p>
             </div>
-         </div>           
+         </div>
       </div>
 
       <div class="reviews">
@@ -230,58 +279,58 @@
                            <h3>Яйца перепелов</h3>
                            <p>04 сентября 2022</p>
                            <p>Очень нравится этот магазин.
-                              Всегда в наличии есть 
+                              Всегда в наличии есть
                               разнообразный комбикорм,зерно,
-                              премиксы. Отзывчивый персонал 
-                              и самое главное не дорого.</p> 
+                              премиксы. Отзывчивый персонал
+                              и самое главное не дорого.</p>
                         </div>
                      </div>
-   
-                     <div class="swiper-slide">
-                           <div class="review-item">
-                              <h3>Яйца перепелов</h3>
-                              <p>04 сентября 2022</p>
-                              <p>Очень нравится этот магазин.
-                                 Всегда в наличии есть 
-                                 разнообразный комбикорм,зерно,
-                                 премиксы. Отзывчивый персонал 
-                                 и самое главное не дорого.</p> 
-                           </div>
-                     </div>
-                     
+
                      <div class="swiper-slide">
                         <div class="review-item">
                            <h3>Яйца перепелов</h3>
                            <p>04 сентября 2022</p>
                            <p>Очень нравится этот магазин.
-                              Всегда в наличии есть 
+                              Всегда в наличии есть
                               разнообразный комбикорм,зерно,
-                              премиксы. Отзывчивый персонал 
-                              и самое главное не дорого.</p> 
+                              премиксы. Отзывчивый персонал
+                              и самое главное не дорого.</p>
+                        </div>
+                     </div>
+
+                     <div class="swiper-slide">
+                        <div class="review-item">
+                           <h3>Яйца перепелов</h3>
+                           <p>04 сентября 2022</p>
+                           <p>Очень нравится этот магазин.
+                              Всегда в наличии есть
+                              разнообразный комбикорм,зерно,
+                              премиксы. Отзывчивый персонал
+                              и самое главное не дорого.</p>
                         </div>
                      </div>
                   </div>
-                  
+
                   <div class="swiper-button-next"> <img src="image/button-next.svg" alt=""></div>
                   <div class="swiper-button-prev"> <img src="image/button-prev.svg" alt=""></div>
                   <div class="swiper-pagination"></div>
                </div>
-               
+
             </div>
          </div>
       </div>
-         
+
 
       <div class="container">
          <div class="partners">
             <img src="image/Page-marker.svg" alt="">
             <h2>Наши партнёры</h2>
             <p>Eleifend accumsan, adipiscing pulvinar turpis orci.
-               Sed leo egestas aliquam sit tortor ultrices. Convallis 
-               pulvinar lacus, pretium leo, risus. In quis congue 
-               pellentesque diam est purus mauris. Imperdiet donec 
+               Sed leo egestas aliquam sit tortor ultrices. Convallis
+               pulvinar lacus, pretium leo, risus. In quis congue
+               pellentesque diam est purus mauris. Imperdiet donec
                quam ac elit</p>
-            <hr color="#C5C5C5" width="1200px">
+            <hr color="#C5C5C5" max-width="1200px">
             <div class="partners-logo">
                <img src="image/google.svg" alt="Google">
                <img src="image/microsoft.svg" alt="Microsoft">
@@ -293,9 +342,10 @@
          </div>
       </div>
    </main>
+
    <footer>
       <div class="footer">
-         <div class="container">  
+         <div class="footer-container">
             <img src="image/logo-footer.svg" alt="">
             <div class="footer-up">
                <div class="footer-call">
@@ -315,24 +365,30 @@
                   <a href="facebook.com"><img src="image/facebook.svg" alt="Facebook"></a>
                </div>
             </div>
-            </div>
-            <hr color="#404040" size="1px">
-            <div class="container">
-               <div class="footer-bottom">
-                  <a href="#">Политика конфиденциальности</a>
-                  <div class="footer-bottom_right">
-                     <p>develop by <span>Studio WebMaster, 2021</span></p>
-                     <a href="#"><img src="image/logo-webmaster.svg" alt="logo-webMaster"></a>
-                  </div>
+         </div>
+
+         <div class="footer-container">
+            <div class="footer-bottom">
+               <a href="#">Политика конфиденциальности</a>
+               <div class="footer-bottom_right">
+                  <p>develop by <span>Studio WebMaster, 2021</span></p>
+                  <a href="#"><img src="image/logo-webmaster.svg" alt="logo-webMaster"></a>
                </div>
             </div>
-            
          </div>
-   </div>
-      
+      </div>
+      </div>
+
    </footer>
+
+
+
+
+
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="js/less.js"></script>
    <script src="js/swiper-reviews.js"></script>
+   <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
